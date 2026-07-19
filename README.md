@@ -21,7 +21,7 @@ This project demonstrates the deployment of an isolated Virtual Machine (VM) and
 I initiated the setup by obtaining the official installation medium for the guest operating system. I navigated to the Microsoft software distribution portal to acquire a clean Windows 11 Disk Image (ISO) configured for x64 architecture, selecting English (United States) as the primary system product language to ensure standard environment localization.
 
 ![Acquiring the Windows 11 ISO](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-1.png)
-(https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-2.png)
+[Selecting installer language](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-2.png)
 *Ref 1: Going to the [Windows download page](https://www.microsoft.com/en-us/software-download/windows11) Then selecting and downloading the official Windows 11 x64 target disk image.*
 
 ### Step 2: Hypervisor Environment Initialization
