@@ -74,20 +74,20 @@ I initiated the secure tunnel implementation by setting up the necessary service
 Once authenticated, I navigated to the official download section to obtain the legitimate VPN client software optimized for the Windows platform. I downloaded and executed the setup file inside the virtual machine.
 
 ![Downloading the VPN Client](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-step-2.png)
-*Ref 8: Acquiring the Windows-specific Proton VPN application (Screenshot_20260716_163712.jpg).*
+*Ref 8: Acquiring the Windows-specific Proton VPN application.*
 
 ### Step 9: Launching and Initializing the Client
 Following a successful installation, the Proton VPN client daemon was launched. The interface initialized, presenting the security dashboard that confirms that all local traffic remains unsecured prior to establishing the cryptographic tunnel.
 
-![Initializing the VPN Client](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-step-3.png)
-*Ref 9: First launch of the VPN client dashboard, indicating an unsecured connection status (Screenshot_20260716_164334.jpg).*
+![Initializing the VPN Client]()
+*Ref 9: First launch of the VPN client dashboard, indicating an unsecured connection status.*
 
 ### Step 10: Establishing Baseline Geolocation (The "Control" Test)
 To verify that the secure tunnel works as intended, I needed a control baseline. I launched YouTube to check its automatic regional localization. YouTube correctly identified my connection origin, displaying the localized logo.
 
-![Baseline Geolocation Check](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-step-4.png)
+![Baseline Geolocation Check](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-step-3.png)
 *Ref 10: Establishing a network baseline. YouTube geolocates the browser to the native origin (Screenshot_20260716_164742.png).*
-
+(https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-step-4.png)
 ### Step 11: Active Tunnel Negotiation
 I returned to the Proton VPN client and clicked "Quick Connect." The software automated the cryptographic handshake, establishing a secure, encrypted tunnel to the optimal free endpoint, which in this case was a high-load server based in Singapore. The client confirmed a successful connection and assigned a new external IP address (`103.216.221.108`).
 
