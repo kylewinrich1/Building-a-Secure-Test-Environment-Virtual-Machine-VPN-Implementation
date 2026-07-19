@@ -66,8 +66,8 @@ Here we have it, you made it through the first section. pat yourself on the back
 ### Step 7: Proton VPN Account Registration and Authentication
 I initiated the secure tunnel implementation by setting up the necessary service account within the guest OS. Using the standard browser, I navigated to the Proton VPN portal to register a new user under the Free plan.
 
-![Proton VPN Account Setup](<img width="1033" height="768" alt="Screenshot_20260719_095627" src="https://github.com/user-attachments/assets/b7a4c08b-1103-4011-b444-c8ee592e04b4" />
-)
+![Proton VPN Account Setup]<img width="1033" height="768" alt="Screenshot_20260719_095627" src="https://github.com/user-attachments/assets/b7a4c08b-1103-4011-b444-c8ee592e04b4" />
+
 *Ref 7: Registering and authenticating a new user account on the [Proton VPN portal](protonvpn.com/pricing).*
 
 ### Step 8: VPN Client Provisioning and Installation
@@ -91,7 +91,8 @@ To verify that the secure tunnel works as intended, I needed a control baseline.
 ### Step 11: Active Tunnel Negotiation
 I returned to the Proton VPN client and clicked "Quick Connect." The software automated the cryptographic handshake, establishing a secure, encrypted tunnel to the optimal free endpoint, which in this case was a high-load server based in Singapore. The client confirmed a successful connection and assigned a new external IP address (`103.216.221.108`).
 
-![Active Tunnel Negotiation]
+![Active Tunnel Negotiation]<img width="999" height="649" alt="Screenshot_20260719_101047" src="https://github.com/user-attachments/assets/96aa216b-7838-46f3-91d5-cac6b8097d16" />
+
 *Ref 11: Establishing an active VPN tunnel to a Singapore-based secure endpoint.*
 
 ### Step 12: Verifying Traffic Obscuration and Successful Geolocation Shift
