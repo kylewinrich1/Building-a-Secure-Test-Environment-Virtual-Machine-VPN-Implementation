@@ -21,18 +21,19 @@ This project demonstrates the deployment of an isolated Virtual Machine (VM) and
 I initiated the setup by obtaining the official installation medium for the guest operating system. I navigated to the Microsoft software distribution portal to acquire a clean Windows 11 Disk Image (ISO) configured for x64 architecture, selecting English (United States) as the primary system product language to ensure standard environment localization.
 
 ![Acquiring the Windows 11 ISO](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-1.png)
-*Ref 1: Going to the [Windows 11 download page](https://www.microsoft.com/en-us/software-download/windows11) T selecting and downloading the official Windows 11 x64 target disk image.*
+(https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-2.png)
+*Ref 1: Going to the [Windows ) download page](https://www.microsoft.com/en-us/software-download/windows11) Then selecting and downloading the official Windows 11 x64 target disk image.*
 
 ### Step 2: Hypervisor Environment Initialization
 Using Oracle VirtualBox Manager, I initialized the creation of a brand new virtualized instance. This stage separates our upcoming sandbox from existing environments running on the host system.
 
-![Oracle VirtualBox New Machine Creation](YOUR_IMAGE_LINK_HERE)
+![Oracle VirtualBox New Machine Creation](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-3.png)
 *Ref 2: Triggering a new virtual machine instance profile within the VirtualBox Manager.*
 
-### Step 3: ISO Mapping and OS Selection
+### Step 3: ISO Mapping and OS Selection(https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-4.png)
 I mapped the downloaded `Win11_25H2_English_x64_v2.iso` disk image directly to the virtual optical drive. The hypervisor automatically detected the architecture, allowing me to specify **Windows 11 Pro N** as the deployment target edition.
 
-![ISO Selection and OS Mapping](YOUR_IMAGE_LINK_HERE)
+![ISO Selection and OS Mapping]
 *Ref 3: Mounting the Windows 11 Pro N ISO image to the hypervisor.*
 
 ### Step 4: Hardware Resource Allocation
@@ -41,19 +42,19 @@ To ensure stable guest performance without starvation on the host OS, I provisio
 * **Processor Allocation:** 4 vCPUs
 * **Firmware Configuration:** Enabled EFI (Extensible Firmware Interface) for secure boot compatibility.
 
-![Specifying Virtual Hardware](YOUR_IMAGE_LINK_HERE)
+![Specifying Virtual Hardware](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-5.png)
 *Ref 4: Allocating virtual RAM, CPU cores, and firmware parameters.*
 
 ### Step 5: Unattended Guest OS Configurations
 To optimize deployment workflow, I utilized VirtualBox's unattended guest setup. I configured the initial baseline management credentials, set the local machine network host name to `Windows11Lab`, and configured the internal domain name space (`myguest.virtualbox.org`).
 
-![Unattended OS Configuration](YOUR_IMAGE_LINK_HERE)
+![Unattended OS Configuration](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-6.png)
 *Ref 5: Setting local administrative credentials, hostnames, and domain parameters.*
 
 ### Step 6: Automated Operating System Deployment
 With the virtual storage and hardware profiles finalized, the virtual machine was powered on. The hypervisor initiated the core installation routine, processing system file extraction, feature setup, and target disk formatting automatically.
 
-![Windows 11 Setup Progress](YOUR_IMAGE_LINK_HERE)
+![Windows 11 Setup Progress](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VM-step-7.png)
 *Ref 6: Active deployment monitor showing automated Windows 11 installation progress.*
 
 ---
