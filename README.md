@@ -86,16 +86,16 @@ Following a successful installation, the Proton VPN client daemon was launched. 
 To verify that the secure tunnel works as intended, I needed a control baseline. I launched YouTube to check its automatic regional localization. YouTube correctly identified my connection origin, displaying the localized logo.
 
 ![Baseline Geolocation Check](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-step-3.png)
-*Ref 10: Establishing a network baseline. YouTube geolocates the browser to the native origin (Screenshot_20260716_164742.png).*
+*Ref 10: Establishing a network baseline. YouTube geolocates the browser to the native origin.*
 
 ### Step 11: Active Tunnel Negotiation
 I returned to the Proton VPN client and clicked "Quick Connect." The software automated the cryptographic handshake, establishing a secure, encrypted tunnel to the optimal free endpoint, which in this case was a high-load server based in Singapore. The client confirmed a successful connection and assigned a new external IP address (`103.216.221.108`).
 
-![Active Tunnel Negotiation](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-final.png)
-*Ref 11: Establishing an active VPN tunnel to a Singapore-based secure endpoint (Screenshot_20260716_164849.jpg).*
+![Active Tunnel Negotiation]
+*Ref 11: Establishing an active VPN tunnel to a Singapore-based secure endpoint.*
 
 ### Step 12: Verifying Traffic Obscuration and Successful Geolocation Shift
 To conclude the implementation audit, I returned to the browser (Ref 10) and refreshed the YouTube homepage. The verification test was successful: YouTube no longer saw my native origin and now localized my browser based on the VPN's egress point. This shift confirms that all traffic from the virtual machine is successfully encapsulated, encrypted, and correctly routed through the obscure network endpoint.
 
-![VPN Security Verification](YOUR_IMAGE_LINK_HERE)
-*Ref 12: Successful implementation audit. YouTube now localizes the browser based on the secure VPN endpoint, proving successful traffic obscuration (Screenshot_20260716_164911.png).*
+![VPN Security Verification](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/Vpn-final.png)
+*Ref 12: Successful implementation audit. YouTube now localizes the browser based on the secure VPN endpoint, proving successful traffic obscuration.*
