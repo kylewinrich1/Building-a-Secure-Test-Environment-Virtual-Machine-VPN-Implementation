@@ -66,8 +66,9 @@ Here we have it, you made it through the first section. pat yourself on the back
 ### Step 7: Proton VPN Account Registration and Authentication
 I initiated the secure tunnel implementation by setting up the necessary service account within the guest OS. Using the standard browser, I navigated to the Proton VPN portal to register a new user under the Free plan.
 
-![Proton VPN Account Setup](https://github.com/kylewinrich1/Building-a-Secure-Test-Environment-Virtual-Machine-VPN-Implementation/blob/main/VPN-step-1.png)
-*Ref 7: Registering and authenticating a new user account on the Proton VPN portal (Screenshot_20260716_163448.jpg).*
+![Proton VPN Account Setup](<img width="1033" height="768" alt="Screenshot_20260719_095627" src="https://github.com/user-attachments/assets/b7a4c08b-1103-4011-b444-c8ee592e04b4" />
+)
+*Ref 7: Registering and authenticating a new user account on the [Proton VPN portal](protonvpn.com/pricing).*
 
 ### Step 8: VPN Client Provisioning and Installation
 Once authenticated, I navigated to the official download section to obtain the legitimate VPN client software optimized for the Windows platform. I downloaded and executed the setup file inside the virtual machine.
